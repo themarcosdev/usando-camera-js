@@ -1,15 +1,38 @@
 <!DOCTYPE html>
 <html>
   <head>
+    <meta lang="pt-br">
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width">
-    <title>Camera</title>
-    <link href="style.css" rel="stylesheet" type="text/css" />
+     <link rel="stylesheet" href="style.css" />
+    <title>Câmera WebRTC</title>
+    <link rel="icon" href="src/icon.png">
+    <!-- importando html to canvas para foto -->
+  <script src="script.js"></script>
+  <script src=
+"https://cdn.jsdelivr.net/npm/html2canvas@1.0.0-rc.5/dist/html2canvas.min.js">
+  </script>
+   
   </head>
+  
+  
   <body>
-    <script src="script.js"></script>
-
-    <video id="video" autoplay></video>
     
+    <span><strong>@themarcosdev</strong></span>
+
+  <div id="fotoDiv">
+    <video id="video"autoplay></video>
+ 
+ </div>
+ 
+<div id="comandos">
+  <button onclick="tirarFoto()
+  ">Foto</button>
+    <h5>⬇FOTOS CAPTURADAS ⬇</h5>
+</div>
+  <div id="fotoPronta"></div>
+
+
+
   </body>
 </html>
